@@ -1,14 +1,11 @@
 package utfpr.edu.icmsudp;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import java.util.Scanner;
 
 public class ClienteUDP {
     
@@ -22,10 +19,8 @@ public class ClienteUDP {
     }
     
     public Pessoa dadosPessoa() throws IOException, ClassNotFoundException {
-        
-        Scanner scan = new Scanner(System.in);
+       
         Pessoa pessoa = new Pessoa();
-        
         pessoa.setNome("Paulo");
         pessoa.setIdade(26);
         pessoa.setAltura(1.70);
